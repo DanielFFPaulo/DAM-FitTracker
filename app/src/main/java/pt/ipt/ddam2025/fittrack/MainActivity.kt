@@ -1,5 +1,3 @@
-package pt.ipt.ddam2025.fittrack
-
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
