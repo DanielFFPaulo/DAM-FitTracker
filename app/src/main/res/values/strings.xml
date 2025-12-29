@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">FitTrack</string>
+    <string name="fragmento_1">Fragmento 1</string>
+    <string name="fragmento_2">Fragmento 2</string>
+    <string name="fragmento_3">Fragmento 3</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="placeholder">Hello World\n</string>
+    <string name="placeholder_2">Hello World do 2</string>
+    <string name="placeholder_3">Olá mundo</string>
 </resources>
