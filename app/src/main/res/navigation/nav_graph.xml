@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/runFragment">
+
+    <fragment
+        android:id="@+id/runFragment"
+        android:name="pt.ipt.ddam2025.fittrack.RunFragment"
+        android:label="Corrida" />
+
+    <fragment
+        android:id="@+id/repsFragment"
+        android:name="pt.ipt.ddam2025.fittrack.RepsFragment"
+        android:label="Repetições" />
+
+    <fragment
+        android:id="@+id/historyFragment"
+        android:name="pt.ipt.ddam2025.fittrack.HistoryFragment"
+        android:label="Histórico" />
+</navigation>
