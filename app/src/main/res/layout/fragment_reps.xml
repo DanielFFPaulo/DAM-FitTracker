@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
+
+<!-- ScrollView permite rolar o ecrã se não couber em dispositivos pequenos -->
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#FFFFFF">
 
+    <!-- Container vertical com tudo o que aparece no ecrã -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -11,7 +14,7 @@
         android:gravity="center_horizontal"
         android:padding="20dp">
 
-        <!-- Título -->
+        <!-- Título do ecrã (instrução para o utilizador) -->
         <TextView
             android:id="@+id/tvInstruction"
             android:layout_width="wrap_content"
@@ -22,7 +25,7 @@
             android:textColor="#222222"
             android:layout_marginBottom="20dp" />
 
-        <!-- Card Exercício -->
+        <!-- "Card" onde está o Spinner para escolher o exercício -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -34,6 +37,7 @@
             android:layout_marginHorizontal="20dp"
             android:layout_marginBottom="20dp">
 
+            <!-- Spinner: permite escolher Flexões / Agachamentos / Abdominais -->
             <Spinner
                 android:id="@+id/spExercise"
                 android:layout_width="wrap_content"
@@ -41,7 +45,7 @@
 
         </LinearLayout>
 
-        <!-- Card Estatísticas -->
+        <!-- "Card" onde aparecem as estatísticas do treino -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -53,6 +57,7 @@
             android:layout_marginHorizontal="20dp"
             android:layout_marginBottom="30dp">
 
+            <!-- Mostra o número de repetições contadas -->
             <TextView
                 android:id="@+id/tvReps"
                 android:layout_width="wrap_content"
@@ -63,6 +68,7 @@
                 android:textStyle="bold"
                 android:layout_marginBottom="10dp" />
 
+            <!-- Mostra o tempo decorrido desde que o utilizador carregou em Iniciar -->
             <TextView
                 android:id="@+id/tvTime"
                 android:layout_width="wrap_content"
@@ -73,7 +79,7 @@
 
         </LinearLayout>
 
-        <!-- Botão Iniciar -->
+        <!-- Botão que inicia a contagem e o cronómetro -->
         <Button
             android:id="@+id/btnStart"
             android:layout_width="200dp"
@@ -84,9 +90,7 @@
             android:backgroundTint="#4CAF50"
             android:layout_marginBottom="15dp"/>
 
-
-
-        <!-- Botão Parar -->
+        <!-- Botão que termina o treino e guarda na base de dados -->
         <Button
             android:id="@+id/btnStop"
             android:layout_width="200dp"
@@ -97,6 +101,6 @@
             android:backgroundTint="#CCCCCC"
             android:enabled="false"/>
 
-
     </LinearLayout>
+
 </ScrollView>

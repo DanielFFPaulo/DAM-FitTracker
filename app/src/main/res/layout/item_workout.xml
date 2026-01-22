@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
+
+<!-- Layout de 1 item (1 linha/cartão) do histórico de treinos (RecyclerView) -->
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:padding="12dp"
@@ -7,21 +9,61 @@
     android:background="@android:color/white"
     android:elevation="2dp">
 
+    <!-- Cabeçalho do item: ícone (emoji) + tipo de treino na mesma linha -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <!-- Mostra o emoji do treino (🏃 💪 🦵 🔥 ...) -->
+        <TextView
+            android:id="@+id/tvWorkoutIcon"
+            android:layout_width="28dp"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="🏃"
+            android:gravity="center" />
+
+        <!-- Mostra o nome do tipo de treino (Corrida, Flexões, etc.) -->
+        <TextView
+            android:id="@+id/tvWorkoutType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:text="Corrida" />
+
+    </LinearLayout>
+
+    <!-- Mostra a data e hora do treino (ex: 10/01/2026 18:42) -->
     <TextView
-        android:id="@+id/tvWorkoutInfo"
+        android:id="@+id/tvWorkoutDate"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textColor="@android:color/black"
-        android:textSize="16sp"
-        android:paddingBottom="8dp" />
+        android:textSize="14sp"
+        android:layout_marginTop="2dp" />
 
+    <!-- Mostra os detalhes do treino (distância, tempo, ritmo ou reps) -->
+    <TextView
+        android:id="@+id/tvWorkoutDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:textSize="14sp"
+        android:paddingTop="6dp" />
+
+    <!-- Linha com os botões (ações) do item -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:gravity="end"
-        android:layout_marginTop="4dp">
+        android:layout_marginTop="8dp">
 
+        <!-- Botão para partilhar o resumo do treino por apps (WhatsApp, Email, etc.) -->
         <Button
             android:id="@+id/btnShare"
             android:layout_width="wrap_content"
@@ -30,6 +72,7 @@
             android:textColor="@android:color/white"
             android:backgroundTint="@color/purple_200" />
 
+        <!-- Botão para remover o treino do histórico (apaga na base de dados) -->
         <Button
             android:id="@+id/btnDelete"
             android:layout_width="wrap_content"
@@ -38,5 +81,7 @@
             android:textColor="@android:color/white"
             android:backgroundTint="@android:color/holo_red_light"
             android:layout_marginStart="8dp" />
+
     </LinearLayout>
+
 </LinearLayout>

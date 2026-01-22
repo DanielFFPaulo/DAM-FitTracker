@@ -2,21 +2,25 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
-    <!-- Localização -->
+    <!-- Permissão para obter localização precisa (GPS) -->
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+
+    <!-- Permissão para obter localização aproximada (rede/Wi-Fi) -->
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
-    <!-- Background location (Android 10+) — será pedida em runtime -->
+
+    <!-- Permissão para localização em background (Android 10+) -->
     <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION"/>
 
-    <!-- Serviço em foreground -->
+    <!-- Permissão para executar serviços em foreground -->
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
-    <!-- Em Android 14+ é obrigatório indicar o tipo -->
+
+    <!-- Obrigatória em Android 14+ quando o serviço em foreground usa localização -->
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE_LOCATION"/>
 
-    <!-- Notificações para mostrar a notificação do serviço -->
+    <!-- Permissão para mostrar notificações (Android 13+) -->
     <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
 
-
+    <!-- Configuração global da aplicação (ícones, nome, tema e regras de backup) -->
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -26,15 +30,20 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.FitTrack">
+
+        <!-- Activity principal (ponto de entrada da app) -->
         <activity
             android:name=".MainActivity"
             android:exported="true">
+
+            <!-- Faz com que a app apareça no launcher -->
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
         </activity>
+
     </application>
 
 </manifest>

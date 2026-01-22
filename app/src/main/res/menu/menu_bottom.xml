@@ -1,16 +1,18 @@
-<?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
+    <!-- Botão do menu para o ecrã de corrida -->
     <item
         android:id="@+id/runFragment"
         android:title="Corrida"
         android:icon="@android:drawable/ic_menu_mylocation" />
 
+    <!-- Botão do menu para o ecrã de exercícios por repetições -->
     <item
         android:id="@+id/repsFragment"
         android:title="Repetições"
         android:icon="@android:drawable/ic_media_play" />
 
+    <!-- Botão do menu para o histórico de treinos -->
     <item
         android:id="@+id/historyFragment"
         android:title="Histórico"

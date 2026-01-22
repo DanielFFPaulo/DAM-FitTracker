@@ -1,19 +1,37 @@
 <resources>
+
+    <!-- Nome da aplicação (mostrado no launcher e na barra superior) -->
     <string name="app_name">FitTrack</string>
+
+    <!-- Títulos dos ecrãs -->
     <string name="history_title">Ecrã Histórico</string>
     <string name="reps_title">Ecrã Repetições</string>
     <string name="run_title">Ecrã Corrida</string>
+
+    <!-- Texto de botões comuns -->
     <string name="share">Partilhar</string>
     <string name="delete">Remover</string>
 
-    <string name="instruction_choose">Por favor escolha o exercício que pretende fazer</string>
+    <!-- Texto de instrução no ecrã de repetições -->
+    <string name="instruction_choose">
+        Por favor escolha o exercício que pretende fazer
+    </string>
+
+    <!-- Texto formatado para mostrar o número de repetições -->
+    <!-- %1$d será substituído por um número inteiro -->
     <string name="label_reps">Repetições: %1$d</string>
+
+    <!-- Texto formatado para mostrar o tempo -->
+    <!-- %1$s será substituído por uma string (ex: 00:01) -->
     <string name="label_time">Tempo: %1$s</string>
+
+    <!-- Texto dos botões -->
     <string name="btn_start">Iniciar</string>
     <string name="btn_stop">Parar</string>
 
-    <!-- Nomes de exercícios -->
+    <!-- Nomes dos exercícios -->
     <string name="ex_pushups">Flexões</string>
     <string name="ex_squats">Agachamentos</string>
     <string name="ex_abs">Abdominais</string>
+
 </resources>

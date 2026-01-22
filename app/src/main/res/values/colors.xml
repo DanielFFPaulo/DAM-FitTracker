@@ -1,12 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
+
+<!-- Ficheiro onde são definidas todas as cores da aplicação -->
 <resources>
+
+    <!-- Cor preta padrão -->
     <color name="black">#FF000000</color>
+
+    <!-- Cor branca padrão -->
     <color name="white">#FFFFFFFF</color>
-    <color name="purple_200">#BB86FC</color>
+
+    <!-- Roxo claro (Material Design) -->
+    <color name="purple_200">#86FC98</color>
+
+    <!-- Cor de fundo principal da aplicação -->
     <color name="fit_background">#F8F3FA</color>
+
+    <!-- Cor primária da aplicação (identidade visual) -->
     <color name="fit_primary">#7B4DC2</color>
+
+    <!-- Versão mais clara da cor primária -->
     <color name="fit_primary_light">#D3C5E0</color>
+
+    <!-- Cor usada para texto escuro -->
     <color name="fit_text_dark">#222222</color>
+
+    <!-- Cor usada para texto secundário -->
     <color name="fit_text_medium">#444444</color>
 
 </resources>
