@@ -8,4 +8,5 @@
     <string name="placeholder">Hello World\n</string>
     <string name="placeholder_2">Hello World do 2</string>
     <string name="placeholder_3">Olá mundo</string>
+    <string name="username">Username</string>
 </resources>
