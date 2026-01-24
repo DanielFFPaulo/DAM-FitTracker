@@ -37,12 +37,23 @@
     <string name="fragmento_2">Fragmento 2</string>
     <string name="fragmento_3">Fragmento 3</string>
     <!--  TODO: Remove or change this placeholder text  -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="placeholder">Hello World\n</string>
-    <string name="placeholder_2">Hello World do 2</string>
+    <string name="hello_blank_fragment">Ola fragmento</string>
+    <string name="placeholder">Olá Mundo\n</string>
+    <string name="placeholder_2">Olá mundo do 2</string>
     <string name="placeholder_3">Olá mundo</string>
-    <string name="username">Username</string>
-
+    <string name="username">Nome de utilizador</string>
+    <string name="date_hint">YYYY/MM/DD</string>
+    <string name="weight">peso</string>
+    <string name="username_register">Nome de utilizador</string>
+    <string name="register_btn">Registar</string>
+    <string name="password">Palavra passe</string>
+    <string name="email">email</string>
+    <string name="full_name">Nome Completo</string>
+    <string name="register_txt_view">Registar</string>
+    <string name="height_hint">Altura</string>
+    <string name="login">LOGIN</string>
+    <string name="password_hint">Palavra passe</string>
+    <string name="login_btn">Login</string>
 
 
 </resources>

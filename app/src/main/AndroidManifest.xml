@@ -22,10 +22,12 @@
         android:theme="@style/Theme.FitTrack">
         <activity
             android:name=".api.Register"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".api.Login"
-            android:exported="true" >
+            android:exported="true"
+            android:screenOrientation="portrait">
 
             <!-- Faz com que a app apareça no launcher -->
             <intent-filter>
@@ -38,7 +40,8 @@
 
         <activity
             android:name=".MainActivity"
-            android:exported="false">
+            android:exported="false"
+            android:screenOrientation="portrait">
 
         </activity>
     </application>
