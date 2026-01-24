@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- TÍTULO -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sobre Nós"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:layout_gravity="center_horizontal"
+            android:paddingBottom="16dp" />
+
+        <!-- CURSO / DISCIPLINA -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Curso: Engenharia Informática\nDisciplina: Desenvolvimento de Aplicações Móveis\nAno Letivo: 2025/2026"
+            android:textSize="16sp"
+            android:textColor="@android:color/black"
+            android:paddingBottom="16dp" />
+
+        <!-- AUTORES -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Autores"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:paddingBottom="8dp" />
+
+        <!-- AUTORES -->
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/sofia"
+            android:layout_gravity="center_horizontal"
+            android:contentDescription="Sofia Vedor" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nº 26411 – Sofia Vedor"
+            android:textSize="16sp"
+            android:textColor="@android:color/black"
+            android:layout_gravity="center_horizontal"
+            android:paddingBottom="16dp" />
+
+
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/daniel"
+            android:layout_gravity="center_horizontal"
+            android:contentDescription="Daniel Paulo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nº 25966 – Daniel Paulo"
+            android:textSize="16sp"
+            android:textColor="@android:color/black"
+            android:layout_gravity="center_horizontal"
+            android:paddingBottom="16dp" />
+
+
+
+        <!-- BIBLIOTECAS -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bibliotecas e Frameworks"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:paddingBottom="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/libs_frameworks"
+            android:textSize="16sp"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Metodologia de Desenvolvimento"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:paddingTop="24dp"
+            android:paddingBottom="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/project_methodology"
+            android:textSize="16sp"
+            android:textColor="@android:color/black" />
+
+
+    </LinearLayout>
+</ScrollView>
