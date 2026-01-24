@@ -2,16 +2,45 @@
 
 <!-- Ecrã do histórico (HistoryFragment) -->
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="8dp">
 
     <!-- Lista onde aparecem os treinos guardados -->
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="132dp">
+
+        <Button
+            android:id="@+id/btnLogout"
+            android:layout_width="225dp"
+            android:layout_height="42dp"
+            android:text="Logout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.876"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="74dp" />
+
+        <TextView
+            android:id="@+id/FullName_display"
+            android:layout_width="225dp"
+            android:layout_height="34dp"
+            android:layout_marginBottom="4dp"
+            android:text="TextView"
+            app:layout_constraintBottom_toTopOf="@+id/btnLogout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.876"
+            app:layout_constraintStart_toStartOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvHistory"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="562dp"
         android:clipToPadding="false"
         android:paddingBottom="8dp" />
 

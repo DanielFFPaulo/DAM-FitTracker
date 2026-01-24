@@ -1,27 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
-
     <!-- Permissão para obter localização precisa (GPS) -->
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" /> <!-- Permissão para obter localização aproximada (rede/Wi-Fi) -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" /> <!-- Permissão para localização em background (Android 10+) -->
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" /> <!-- Permissão para executar serviços em foreground -->
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" /> <!-- Obrigatória em Android 14+ quando o serviço em foreground usa localização -->
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_LOCATION" /> <!-- Permissão para mostrar notificações (Android 13+) -->
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.INTERNET" />
 
-    <!-- Permissão para obter localização aproximada (rede/Wi-Fi) -->
-    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
-
-    <!-- Permissão para localização em background (Android 10+) -->
-    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION"/>
-
-    <!-- Permissão para executar serviços em foreground -->
-    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
-
-    <!-- Obrigatória em Android 14+ quando o serviço em foreground usa localização -->
-    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_LOCATION"/>
-
-    <!-- Permissão para mostrar notificações (Android 13+) -->
-    <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
-
-    <!-- Configuração global da aplicação (ícones, nome, tema e regras de backup) -->
     <application
+        android:usesCleartextTraffic="true"
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
@@ -30,20 +20,27 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.FitTrack">
-
-        <!-- Activity principal (ponto de entrada da app) -->
         <activity
-            android:name=".MainActivity"
-            android:exported="true">
+            android:name=".api.Register"
+            android:exported="false" />
+        <activity
+            android:name=".api.Login"
+            android:exported="true" >
 
             <!-- Faz com que a app apareça no launcher -->
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity> <!-- Activity principal (ponto de entrada da app) -->
+
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="false">
 
         </activity>
-
     </application>
 
 </manifest>

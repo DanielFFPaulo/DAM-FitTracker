@@ -107,6 +107,7 @@ class RunFragment : Fragment() {
         container: ViewGroup?,
         // Estado guardado (se existir)
         savedInstanceState: Bundle?
+
         // Retorna a View inflada do layout
     ): View = inflater.inflate(R.layout.fragment_run, container, false)
 
@@ -266,7 +267,7 @@ class RunFragment : Fragment() {
         // Stop fica ativo quando há tracking
         btnStop.isEnabled = tracking
         // Se não está a gravar, mostra stats atuais
-        if (!tracking) refreshStats()
+        if (tracking) refreshStats()
     }
 
     // Calcula e mostra distância, tempo e ritmo

@@ -2,6 +2,7 @@
 package pt.ipt.ddam2025.fittrack
 
 // Classe base para activities com suporte a AppCompat
+import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 
@@ -13,13 +14,25 @@ import androidx.navigation.ui.setupWithNavController
 
 // Componente de menu inferior (bottom navigation)
 import com.google.android.material.bottomnavigation.BottomNavigationView
+import pt.ipt.ddam2025.fittrack.api.AppSession
+import pt.ipt.ddam2025.fittrack.api.Login
 
 // Activity principal da aplicação
 class MainActivity : AppCompatActivity() {
 
+    private lateinit var appSession: AppSession
     // Método chamado quando a activity é criada
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
+        appSession = AppSession.getInstance(this)
+
+        // Check if logged in
+        if (!appSession.isLoggedIn()) {
+            startActivity(Intent(this, Login::class.java))
+            finish()
+            return
+        }
 
         // Define o layout principal da aplicação
         setContentView(R.layout.activity_main)
