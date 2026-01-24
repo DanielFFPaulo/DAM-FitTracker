@@ -1,5 +1,6 @@
 package pt.ipt.ddam2025.fittrack.api
 
+import pt.ipt.ddam2025.fittrack.AboutActivity
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
@@ -56,6 +57,11 @@ class Login : AppCompatActivity() {
         val registerPage : Button = findViewById<Button>(R.id.register_btn)
         registerPage.setOnClickListener{
             goToMain(true)
+        }
+        // BOTÃO SOBRE
+        val aboutBtn: Button = findViewById(R.id.about_btn)
+        aboutBtn.setOnClickListener {
+            startActivity(Intent(this, AboutActivity::class.java))
         }
     }
 

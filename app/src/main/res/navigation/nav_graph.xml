@@ -25,9 +25,9 @@
         android:label="Histórico" />
 
     <!-- Ecrã Sobre a Aplicação -->
-    <fragment
-        android:id="@+id/aboutFragment"
-        android:name="pt.ipt.ddam2025.fittrack.AboutFragment"
-        android:label="Sobre" />
+<fragment
+    android:id="@+id/aboutFragment"
+    android:name="pt.ipt.ddam2025.fittrack.AboutFragment"
+    android:label="Sobre" />
 
 </navigation>

@@ -49,5 +49,6 @@ class MainActivity : AppCompatActivity() {
 
         // Liga o menu inferior ao sistema de navegação
         bottom.setupWithNavController(navController)
+
     }
 }

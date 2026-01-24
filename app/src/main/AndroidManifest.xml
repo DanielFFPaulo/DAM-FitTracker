@@ -38,9 +38,13 @@
 
         <activity
             android:name=".MainActivity"
-            android:exported="false">
+            android:exported="false" />
 
-        </activity>
+        <!-- ABOUT -->
+        <activity
+            android:name=".AboutActivity"
+            android:exported="false" />
+
     </application>
 
 </manifest>
