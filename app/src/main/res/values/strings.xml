@@ -54,6 +54,19 @@
     <string name="login">LOGIN</string>
     <string name="password_hint">Palavra passe</string>
     <string name="login_btn">Login</string>
+    <string name="bibliotecas_e_frameworks">Bibliotecas e Frameworks</string>
+
+    <string name="libs_frameworks">
+• Android SDK\n
+• Kotlin\n
+• AndroidX (Room, LiveData, Navigation)\n
+• Google Play Services (Location)\n
+• Sensores do Android (Accelerometer)\n
+• API REST (HTTP / JSON)
+</string>
 
 
+    <string name="project_methodology">
+O desenvolvimento da aplicação baseou-se na documentação oficial do Android (developer.android.com), bem como na consulta de vários fóruns técnicos online. Adicionalmente, foi utilizado o ChatGPT como apoio ao esclarecimento de conceitos e à estruturação do código.
+</string>
 </resources>
